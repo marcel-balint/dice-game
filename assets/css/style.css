@@ -5,7 +5,7 @@
     transform: translateX(-50%);
     top: 520px;
     color: #555;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Lato';
     text-align: center;
     padding: 10px;
@@ -16,15 +16,6 @@
 .final-score:focus {
     outline: none;
 }
-
-#dice-1 {
-    top: 120px;
-}
-
-#dice-2 {
-    top: 250px;
-}
-
 
 * {
     margin: 0;
@@ -195,4 +186,28 @@ i {
 .winner .player-name {
     font-weight: 300;
     color: #EB4D4D;
+}
+
+.pulsate {
+    animation: pulsate 1s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+.pulsate:hover {
+    animation: none;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 2;
+    }
 }

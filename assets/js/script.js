@@ -45,12 +45,22 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
         //Update UI
         document.getElementById("score-" + activePlayer).textContent = scores[activePlayer];
 
+        var input = document.querySelector(".final-score").value;
+        var winningScore;
+
+        if (input) {
+            winningScore = input;
+        } else {
+            winningScore = 100;
+        }
         //Check if the player won the game
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= winningScore) {
             document.getElementById("name-" + activePlayer).textContent = "Winner!";
             document.querySelector('.dice').style.display = "none";
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+            document.querySelector(".btn-new").classList.add('pulsate');
+
             gamePlaying = false;
         } else {
             //Next player
@@ -91,5 +101,6 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('winner');
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-1-panel').classList.remove('active');
+    document.querySelector(".btn-new").classList.remove('pulsate');
     document.querySelector('.player-0-panel').classList.add('active');
 };

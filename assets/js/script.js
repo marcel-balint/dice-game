@@ -104,3 +104,14 @@ function init() {
     document.querySelector(".btn-new").classList.remove('pulsate');
     document.querySelector('.player-0-panel').classList.add('active');
 };
+
+
+document.querySelector(".rules-btn").addEventListener("click", function () {
+    var box = document.querySelector(".box-rules");
+    box.style.display = "block";
+});
+
+document.querySelector(".close").addEventListener("click", function () {
+    var box = document.querySelector(".box-rules");
+    box.style.display = "none";
+});

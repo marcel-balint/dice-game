@@ -28,7 +28,7 @@ This is a JavaScript DOM manipulation dice-game.
 
 1.  Clone this repo:
 
-- `git clone https://github.com/marcel-balint/pig-game.git`
+- `git clone https://github.com/marcel-balint/dice-game.git`
 
 2. To cut ties with this GitHub repository, type in terminal:
 

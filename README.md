@@ -1,4 +1,4 @@
-## Live demo of the game can be seen [here](https://marcel-balint.github.io/pig-game/)
+## Live demo of the game can be seen [here](https://marcel-balint.github.io/dice-game/)
 
 This is a JavaScript DOM manipulation dice-game.
 
